@@ -1,0 +1,16 @@
+version: '3.7'
+
+services:
+ wordpress:
+   image: wordpress:latest
+   ports:
+     - 80:80
+   restart: always
+   environment:
+     WORDPRESS_DB_HOST: ww120t1vol6ydlg.cghwu4dm6b3n.eu-west-3.rds.amazonaws.com:3306
+     WORDPRESS_DB_USER: wordpress
+     WORDPRESS_DB_PASSWORD: Jordan2501
+     WORDPRESS_DB_NAME: wordpress
+
+
+
